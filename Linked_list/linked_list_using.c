@@ -19,6 +19,7 @@ struct Node *insert_last(struct Node *node)
 
 void trav(struct Node *node)
 {
+    printf("\nTraversal: ");
     while (node->next)
     {
         node = node->next;
@@ -59,7 +60,8 @@ int main()
     while (1)
     {
 
-        printf("1.insert\n2.trav\n3.del\n4[+].Exit\nEnter option: ");
+        printf("\n-----------------------Menu-------------------\n");
+        printf("1.Insertion\n2.Traversal\n3.Deletion\n4[+]Exit\nEnter option: ");
         int choice;
         scanf("%d", &choice);
         switch (choice)
