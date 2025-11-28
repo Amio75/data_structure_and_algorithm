@@ -15,9 +15,11 @@ public:
     }
     void push(int x)
     {
-        top++;
         if (top < size - 1)
+        {
+            top++;
             ptr[top] = x;
+        }
         else
             cout << "Stack is full" << endl;
     }
@@ -40,7 +42,7 @@ public:
 
 int main()
 {
-    cout << "Give the size of stack: ";
+    cout << "Give the size of stck: ";
     int n;
     cin >> n;
     Stack st(n);
